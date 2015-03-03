@@ -1,13 +1,20 @@
 /*
- * File: honeycomb.c
+ * File: honeysearch.c
  * Author: Mateo Garcia
  * --------------------
- * This file contains an implementation of a honeycomb word search solver.
- * The honeycomb is represented as a series of columns, with an array of
- * characters comrpising the letters in each column. The implementation
- * relies on recursive backtracking to search for words, a hashtable
- * for checking each word against the user-specified file of valid words,
- * and a sortable vector that stores words found.
+ * This file contains an implementation of a honeycomb word search solver,
+ * taken from code I wrote for a Quancast Coding Challenge. I plan on
+ * converting it into a custom honeycomb word search maker and solver. Once I've figured out
+ * how to textually represent a honeycomb, I plan to add a feature that
+ *
+ * To execute the solver, pass it a text file as a single argument,
+ * formatted similarly to wordsearch.txt.
+ *
+ * The honeycomb is internally represented as a series of columns, with an
+ * array of characters comrpising the letters in each column. The
+ * implementation relies on recursive backtracking to search for words, a
+ * hashtable for checking each word against the user-specified file of
+ * valid words, and a sortable vector that stores words found.
  */
 
 #include <assert.h>
