@@ -2,13 +2,24 @@
  * File: honeysearch.c
  * Author: Mateo Garcia
  * --------------------
- * This file contains an implementation of a honeycomb word search solver,
- * taken from code I wrote for a Quancast Coding Challenge. I plan on
- * converting it into a custom honeycomb word search maker and solver. Once I've figured out
- * how to textually represent a honeycomb, I plan to add a feature that
+ * This file contains an implementation of a hexagonal honeycomb word
+ * search solver, taken from code I wrote for a Quancast Coding Challenge.
+ * I plan on converting it into a custom honeycomb word search maker and
+ * solver.
  *
- * To execute the solver, pass it a text file as a single argument,
- * formatted similarly to wordsearch.txt.
+ * Once I've figured out how to textually represent a honeycomb with a
+ * single letter in each cell, as is required for the word search, I plan
+ * to add code to generate honeycomb representation of any text file, and
+ * even store complete strings in each cell.
+ *
+ * The solver takes in two text files as command-line arguments. The first
+ * file is used to create the honeycomb word search. Its first line must
+ * contain the number of layers, followed by strings representing each
+ * layer of the honeycomb, proceeding from the center outward, where the
+ * first letter in each string is the top letter in its layer's hexagon,
+ * and the rest of the string wraps around the center of the honeycomb in
+ * clockwise order. The second file is the word search's lexicon, which
+ * must contain one word per line.
  *
  * The honeycomb is internally represented as a series of columns, with an
  * array of characters comrpising the letters in each column. The
