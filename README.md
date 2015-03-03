@@ -1,2 +1,2 @@
-# honeypoem
-Write a poem and represent it as a textual honeycomb.
+# honeysearch
+Honeycomb-shaped word search maker and solver.
